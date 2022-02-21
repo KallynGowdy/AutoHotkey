@@ -81,8 +81,7 @@ ToggleTerminal()
         else if WinExist(WinMatcher)
         {
             ; Script sees it without detecting hidden windows, so..
-            WinHide ahk_class CASCADIA_HOSTING_WINDOW_CLASS
-            Send !{Esc}
+            WinMinimize, ahk_class CASCADIA_HOSTING_WINDOW_CLASS
         }
     }
     else
