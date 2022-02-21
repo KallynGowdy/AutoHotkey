@@ -4,17 +4,38 @@ SendMode Input ; Recommended for new scripts due to its superior speed and relia
 
 #IfWinActive, ahk_class CabinetWClass ; explorer
 
-    ^+`:: 
+    ^+`::
+        ; Open Windows Terminal
         ActiveExplorerPath := GetActiveExplorerPath()
         EnvGet, localappdata, LOCALAPPDATA
-        Run "%localappdata%\Microsoft\WindowsApps\wt.exe" -d "%ActiveExplorerPath%", %ActiveExplorerPath%
+        OpenToPath("", localappdata . "\Microsoft\WindowsApps\wt.exe -d """ . ActiveExplorerPath . """", ActiveExplorerPath)
         Sleep, 1000
         ShowAndPositionTerminal()
+    return
+
+    ^!C:: 
+        ; Open VSCode
+        ActiveExplorerPath := GetActiveExplorerPath()
+        OpenToPath("", """C:\Program Files\Microsoft VS Code\Code.exe"" """ . ActiveExplorerPath . """", ActiveExplorerPath)
+    return
+
+    ^!G:: 
+        ; Open GitExtensions
+        ActiveExplorerPath := GetActiveExplorerPath()
+        OpenToPath("", "gitextensions browse """ . ActiveExplorerPath . """", ActiveExplorerPath)
     return
 
 #IfWinActive
 
 ^`::ToggleTerminal()
+
+OpenToPath(matcher, program, path) {
+    DetectHiddenWindows, On
+    if !matcher || !WinExist(matcher)
+    {
+        Run %program%, %path%
+    }
+}
 
 ; https://www.autohotkey.com/boards/viewtopic.php?f=6&t=69925
 
