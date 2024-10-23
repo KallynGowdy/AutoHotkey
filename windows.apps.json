@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2024-10-23T15:11:13.266-00:00",
+	"CreationDate" : "2024-10-23T15:17:33.665-00:00",
 	"Sources" : 
 	[
 		{
@@ -65,6 +65,9 @@
 				},
 				{
 					"PackageIdentifier" : "AutoHotkey.AutoHotkey"
+				},
+				{
+					"PackageIdentifier" : "DenoLand.Deno"
 				},
 				{
 					"PackageIdentifier" : "Discord.Discord"
