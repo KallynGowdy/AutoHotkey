@@ -1,25 +1,20 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2024-10-23T15:17:33.665-00:00",
+	"CreationDate" : "2024-10-24T12:07:41.074-00:00",
 	"Sources" : 
 	[
 		{
 			"Packages" : 
 			[
 				{
+					"PackageIdentifier" : "AutoHotkey.AutoHotkey",
+					"Scope": "machine"
+				},
+				{
 					"PackageIdentifier" : "CoreyButler.NVMforWindows"
 				},
 				{
 					"PackageIdentifier" : "Git.Git"
-				},
-				{
-					"PackageIdentifier" : "Nvidia.GeForceExperience"
-				},
-				{
-					"PackageIdentifier" : "Nvidia.PhysX"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
 					"PackageIdentifier" : "GitExtensionsTeam.GitExtensions"
@@ -37,22 +32,10 @@
 					"PackageIdentifier" : "Microsoft.Edge"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
-				},
-				{
 					"PackageIdentifier" : "Rem0o.FanControl"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2010.x86"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.DotNet.Runtime.6"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x86"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCRedist.2015+.x64"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.DotNet.DesktopRuntime.8"
@@ -64,37 +47,16 @@
 					"PackageIdentifier" : "OpenWhisperSystems.Signal"
 				},
 				{
-					"PackageIdentifier" : "AutoHotkey.AutoHotkey"
-				},
-				{
 					"PackageIdentifier" : "DenoLand.Deno"
 				},
 				{
 					"PackageIdentifier" : "Discord.Discord"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.OneDrive"
-				},
-				{
 					"PackageIdentifier" : "SlackTechnologies.Slack"
 				},
 				{
 					"PackageIdentifier" : "Telegram.TelegramDesktop"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Teams"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.AppInstaller"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.UI.Xaml.2.7"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.UI.Xaml.2.8"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VCLibs.Desktop.14"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.DevHome"
