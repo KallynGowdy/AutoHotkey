@@ -1,0 +1,941 @@
+{
+  "__VERSION__": "206",
+  "Main": {
+    "Controls": [
+      {
+        "Calibration": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            167
+          ],
+          [
+            20,
+            337
+          ],
+          [
+            30,
+            530
+          ],
+          [
+            40,
+            1128
+          ],
+          [
+            60,
+            1136
+          ],
+          [
+            70,
+            1140
+          ],
+          [
+            80,
+            1271
+          ],
+          [
+            90,
+            1408
+          ],
+          [
+            100,
+            1522
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6798d/control/1",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #2",
+        "NickName": "CPU",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6798d/fan/1",
+          "IsHidden": false,
+          "Name": "Fan #2",
+          "NickName": "CPU"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IsHidden": false,
+          "Name": "Flat",
+          "Percent": 45.0
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 18,
+        "SelectedStop": 6
+      },
+      {
+        "Calibration": [
+          [
+            10,
+            519
+          ],
+          [
+            20,
+            526
+          ],
+          [
+            40,
+            1398
+          ],
+          [
+            60,
+            1399
+          ],
+          [
+            70,
+            1402
+          ],
+          [
+            80,
+            1403
+          ],
+          [
+            90,
+            1527
+          ],
+          [
+            100,
+            1532
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6798d/control/0",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #1",
+        "NickName": "Bottom Rear",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6798d/fan/0",
+          "IsHidden": false,
+          "Name": "Fan #1",
+          "NickName": "Bottom Rear"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "Bottom",
+          "OneWayHysteresis": false,
+          "Points": [
+            "40,10",
+            "80,38",
+            "90.46674409115164,61.120888888888885",
+            "100.4,100"
+          ],
+          "SelectedHysteresis": 3.0,
+          "SelectedResponseTime": 4,
+          "SelectedTempSource": {
+            "Identifier": "Mix/Max GPU/CPU",
+            "IsHidden": false,
+            "Name": "Max GPU/CPU",
+            "SelectedMixFunction": 1,
+            "SelectedSensors": [
+              {
+                "Identifier": "/intelcpu/0/temperature/33",
+                "IsHidden": false,
+                "Name": "Core Max",
+                "NickName": "Core Max"
+              },
+              {
+                "Identifier": "NVApiWrapper/0-GA104-A/sensor/0",
+                "IsHidden": false,
+                "Name": "GPU",
+                "NickName": "GPU"
+              }
+            ]
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [
+          [
+            10,
+            499
+          ],
+          [
+            20,
+            509
+          ],
+          [
+            80,
+            1406
+          ],
+          [
+            90,
+            1536
+          ],
+          [
+            100,
+            1541
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6798d/control/5",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #6",
+        "NickName": "Bottom Center",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6798d/fan/5",
+          "IsHidden": false,
+          "Name": "Fan #6",
+          "NickName": "Fan #6"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "Bottom",
+          "OneWayHysteresis": false,
+          "Points": [
+            "40,10",
+            "80,38",
+            "90.46674409115164,61.120888888888885",
+            "100.4,100"
+          ],
+          "SelectedHysteresis": 3.0,
+          "SelectedResponseTime": 4,
+          "SelectedTempSource": {
+            "Identifier": "Mix/Max GPU/CPU",
+            "IsHidden": false,
+            "Name": "Max GPU/CPU",
+            "SelectedMixFunction": 1,
+            "SelectedSensors": [
+              {
+                "Identifier": "/intelcpu/0/temperature/33",
+                "IsHidden": false,
+                "Name": "Core Max",
+                "NickName": "Core Max"
+              },
+              {
+                "Identifier": "NVApiWrapper/0-GA104-A/sensor/0",
+                "IsHidden": false,
+                "Name": "GPU",
+                "NickName": "GPU"
+              }
+            ]
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [
+          [
+            0,
+            511
+          ],
+          [
+            10,
+            515
+          ],
+          [
+            20,
+            523
+          ],
+          [
+            40,
+            1086
+          ],
+          [
+            60,
+            1091
+          ],
+          [
+            70,
+            1390
+          ],
+          [
+            80,
+            1393
+          ],
+          [
+            90,
+            1518
+          ],
+          [
+            100,
+            1564
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6798d/control/3",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #4",
+        "NickName": "Bottom Front",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6798d/fan/3",
+          "IsHidden": false,
+          "Name": "Fan #4",
+          "NickName": "Bottom Front"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "Bottom",
+          "OneWayHysteresis": false,
+          "Points": [
+            "40,10",
+            "80,38",
+            "90.46674409115164,61.120888888888885",
+            "100.4,100"
+          ],
+          "SelectedHysteresis": 3.0,
+          "SelectedResponseTime": 4,
+          "SelectedTempSource": {
+            "Identifier": "Mix/Max GPU/CPU",
+            "IsHidden": false,
+            "Name": "Max GPU/CPU",
+            "SelectedMixFunction": 1,
+            "SelectedSensors": [
+              {
+                "Identifier": "/intelcpu/0/temperature/33",
+                "IsHidden": false,
+                "Name": "Core Max",
+                "NickName": "Core Max"
+              },
+              {
+                "Identifier": "NVApiWrapper/0-GA104-A/sensor/0",
+                "IsHidden": false,
+                "Name": "GPU",
+                "NickName": "GPU"
+              }
+            ]
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [
+          [
+            0,
+            311
+          ],
+          [
+            10,
+            322
+          ],
+          [
+            20,
+            350
+          ],
+          [
+            30,
+            458
+          ],
+          [
+            40,
+            563
+          ],
+          [
+            50,
+            690
+          ],
+          [
+            60,
+            798
+          ],
+          [
+            70,
+            908
+          ],
+          [
+            80,
+            1007
+          ],
+          [
+            90,
+            1123
+          ],
+          [
+            100,
+            1137
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6798d/control/4",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #5",
+        "NickName": "Front",
+        "PairedFanSensor": {
+          "Identifier": "/lpc/nct6798d/fan/4",
+          "IsHidden": false,
+          "Name": "Fan #5",
+          "NickName": "Front"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "Front",
+          "OneWayHysteresis": false,
+          "Points": [
+            "35,10",
+            "60,35",
+            "80,50",
+            "90.30980256756332,80.85422222222222",
+            "99.56935245927367,100"
+          ],
+          "SelectedHysteresis": 3.0,
+          "SelectedResponseTime": 2,
+          "SelectedTempSource": {
+            "Identifier": "Mix/Max GPU/CPU",
+            "IsHidden": false,
+            "Name": "Max GPU/CPU",
+            "SelectedMixFunction": 1,
+            "SelectedSensors": [
+              {
+                "Identifier": "/intelcpu/0/temperature/33",
+                "IsHidden": false,
+                "Name": "Core Max",
+                "NickName": "Core Max"
+              },
+              {
+                "Identifier": "NVApiWrapper/0-GA104-A/sensor/0",
+                "IsHidden": false,
+                "Name": "GPU",
+                "NickName": "GPU"
+              }
+            ]
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [
+          [
+            30,
+            992
+          ],
+          [
+            40,
+            1392
+          ],
+          [
+            50,
+            1800
+          ],
+          [
+            60,
+            2205
+          ],
+          [
+            70,
+            2610
+          ],
+          [
+            80,
+            3014
+          ],
+          [
+            90,
+            3416
+          ],
+          [
+            100,
+            3755
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "NVApiWrapper/0-GA104-A/control/0",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Control 1 - NVIDIA GeForce RTX 3070 Ti",
+        "NickName": "Control 1 - NVIDIA GeForce RTX 3070 Ti",
+        "PairedFanSensor": {
+          "Identifier": "NVApiWrapper/0-GA104-A/fan/0",
+          "IsHidden": false,
+          "Name": "Fan 1 - NVIDIA GeForce RTX 3070 Ti",
+          "NickName": "Control 1 - NVIDIA GeForce RTX 3070 Ti"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "GPU",
+          "OneWayHysteresis": false,
+          "Points": [
+            "40,30",
+            "60,35",
+            "70,45",
+            "85,60",
+            "90.3,80",
+            "98,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 2,
+          "SelectedTempSource": {
+            "Identifier": "NVApiWrapper/0-GA104-A/sensor/0",
+            "IsHidden": false,
+            "Name": "GPU",
+            "NickName": "GPU"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [
+          [
+            30,
+            993
+          ],
+          [
+            40,
+            1343
+          ],
+          [
+            50,
+            1682
+          ],
+          [
+            60,
+            2029
+          ],
+          [
+            70,
+            2372
+          ],
+          [
+            80,
+            2714
+          ],
+          [
+            90,
+            3059
+          ],
+          [
+            100,
+            3403
+          ]
+        ],
+        "Enable": true,
+        "ForceApply": false,
+        "Identifier": "NVApiWrapper/0-GA104-A/control/1",
+        "IsHidden": false,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Control 2 - NVIDIA GeForce RTX 3070 Ti",
+        "NickName": "Control 2 - NVIDIA GeForce RTX 3070 Ti",
+        "PairedFanSensor": {
+          "Identifier": "NVApiWrapper/0-GA104-A/fan/1",
+          "IsHidden": false,
+          "Name": "Fan 2 - NVIDIA GeForce RTX 3070 Ti",
+          "NickName": "Control 2 - NVIDIA GeForce RTX 3070 Ti"
+        },
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": {
+          "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
+          "IsHidden": false,
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "GPU",
+          "OneWayHysteresis": false,
+          "Points": [
+            "40,30",
+            "60,35",
+            "70,45",
+            "85,60",
+            "90.3,80",
+            "98,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 2,
+          "SelectedTempSource": {
+            "Identifier": "NVApiWrapper/0-GA104-A/sensor/0",
+            "IsHidden": false,
+            "Name": "GPU",
+            "NickName": "GPU"
+          }
+        },
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [],
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6798d/control/2",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #3",
+        "NickName": "Fan #3",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      },
+      {
+        "Calibration": [],
+        "Enable": false,
+        "ForceApply": false,
+        "Identifier": "/lpc/nct6798d/control/6",
+        "IsHidden": true,
+        "ManualControl": false,
+        "ManualControlValue": 50,
+        "MinimumPercent": 0,
+        "Name": "Fan #7",
+        "NickName": "Fan #7",
+        "PairedFanSensor": null,
+        "SelectedCommandStepDown": 8.0,
+        "SelectedCommandStepUp": 8.0,
+        "SelectedFanCurve": null,
+        "SelectedOffset": 0,
+        "SelectedStart": 0,
+        "SelectedStop": 0
+      }
+    ],
+    "CustomSensors": [
+      {
+        "Identifier": "Mix/Max GPU/CPU",
+        "IsHidden": false,
+        "Name": "Max GPU/CPU",
+        "SelectedMixFunction": 1,
+        "SelectedSensors": [
+          {
+            "Identifier": "/intelcpu/0/temperature/33",
+            "IsHidden": false,
+            "Name": "Core Max",
+            "NickName": "Core Max"
+          },
+          {
+            "Identifier": "NVApiWrapper/0-GA104-A/sensor/0",
+            "IsHidden": false,
+            "Name": "GPU",
+            "NickName": "GPU"
+          }
+        ]
+      }
+    ],
+    "Fahrenheit": false,
+    "FanCurves": [
+      {
+        "CommandMode": 0,
+        "IsHidden": true,
+        "Name": "Fan Stop",
+        "Percent": 0.0
+      },
+      {
+        "CommandMode": 0,
+        "IsHidden": true,
+        "Name": "Full Speed",
+        "Percent": 100.0
+      },
+      {
+        "CommandMode": 0,
+        "IsHidden": false,
+        "Name": "Flat",
+        "Percent": 45.0
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120.0,
+        "MinimumTemperature": 20.0,
+        "Name": "CPU",
+        "OneWayHysteresis": false,
+        "Points": [
+          "30.044257509651903,10",
+          "70,40",
+          "80.1,45",
+          "90,100"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 1,
+        "SelectedTempSource": {
+          "Identifier": "/intelcpu/0/temperature/16",
+          "IsHidden": false,
+          "Name": "CPU Package",
+          "NickName": "CPU Package"
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120.0,
+        "MinimumTemperature": 20.0,
+        "Name": "Bottom",
+        "OneWayHysteresis": false,
+        "Points": [
+          "40,10",
+          "80,38",
+          "90.46674409115164,61.120888888888885",
+          "100.4,100"
+        ],
+        "SelectedHysteresis": 3.0,
+        "SelectedResponseTime": 4,
+        "SelectedTempSource": {
+          "Identifier": "Mix/Max GPU/CPU",
+          "IsHidden": false,
+          "Name": "Max GPU/CPU",
+          "SelectedMixFunction": 1,
+          "SelectedSensors": [
+            {
+              "Identifier": "/intelcpu/0/temperature/33",
+              "IsHidden": false,
+              "Name": "Core Max",
+              "NickName": "Core Max"
+            },
+            {
+              "Identifier": "NVApiWrapper/0-GA104-A/sensor/0",
+              "IsHidden": false,
+              "Name": "GPU",
+              "NickName": "GPU"
+            }
+          ]
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120.0,
+        "MinimumTemperature": 20.0,
+        "Name": "Front",
+        "OneWayHysteresis": false,
+        "Points": [
+          "35,10",
+          "60,35",
+          "80,50",
+          "90.30980256756332,80.85422222222222",
+          "99.56935245927367,100"
+        ],
+        "SelectedHysteresis": 3.0,
+        "SelectedResponseTime": 2,
+        "SelectedTempSource": {
+          "Identifier": "Mix/Max GPU/CPU",
+          "IsHidden": false,
+          "Name": "Max GPU/CPU",
+          "SelectedMixFunction": 1,
+          "SelectedSensors": [
+            {
+              "Identifier": "/intelcpu/0/temperature/33",
+              "IsHidden": false,
+              "Name": "Core Max",
+              "NickName": "Core Max"
+            },
+            {
+              "Identifier": "NVApiWrapper/0-GA104-A/sensor/0",
+              "IsHidden": false,
+              "Name": "GPU",
+              "NickName": "GPU"
+            }
+          ]
+        }
+      },
+      {
+        "CommandMode": 0,
+        "IgnoreHysteresisAtLimits": true,
+        "IsHidden": false,
+        "MaximumCommand": 100,
+        "MaximumTemperature": 120.0,
+        "MinimumTemperature": 20.0,
+        "Name": "GPU",
+        "OneWayHysteresis": false,
+        "Points": [
+          "40,30",
+          "60,35",
+          "70,45",
+          "85,60",
+          "90.3,80",
+          "98,100"
+        ],
+        "SelectedHysteresis": 2.0,
+        "SelectedResponseTime": 2,
+        "SelectedTempSource": {
+          "Identifier": "NVApiWrapper/0-GA104-A/sensor/0",
+          "IsHidden": false,
+          "Name": "GPU",
+          "NickName": "GPU"
+        }
+      }
+    ],
+    "FanSensors": [
+      {
+        "Identifier": "/lpc/nct6798d/fan/0",
+        "IsHidden": false,
+        "Name": "Fan #1",
+        "NickName": "Bottom Rear"
+      },
+      {
+        "Identifier": "/lpc/nct6798d/fan/1",
+        "IsHidden": false,
+        "Name": "Fan #2",
+        "NickName": "CPU"
+      },
+      {
+        "Identifier": "/lpc/nct6798d/fan/2",
+        "IsHidden": false,
+        "Name": "Fan #3",
+        "NickName": "Fan #3"
+      },
+      {
+        "Identifier": "/lpc/nct6798d/fan/3",
+        "IsHidden": false,
+        "Name": "Fan #4",
+        "NickName": "Bottom Front"
+      },
+      {
+        "Identifier": "/lpc/nct6798d/fan/4",
+        "IsHidden": false,
+        "Name": "Fan #5",
+        "NickName": "Front"
+      },
+      {
+        "Identifier": "/lpc/nct6798d/fan/5",
+        "IsHidden": false,
+        "Name": "Fan #6",
+        "NickName": "Fan #6"
+      },
+      {
+        "Identifier": "/lpc/nct6798d/fan/6",
+        "IsHidden": false,
+        "Name": "Fan #7",
+        "NickName": "Fan #7"
+      },
+      {
+        "Identifier": "NVApiWrapper/0-GA104-A/fan/0",
+        "IsHidden": false,
+        "Name": "Fan 1 - NVIDIA GeForce RTX 3070 Ti",
+        "NickName": "Control 1 - NVIDIA GeForce RTX 3070 Ti"
+      },
+      {
+        "Identifier": "NVApiWrapper/0-GA104-A/fan/1",
+        "IsHidden": false,
+        "Name": "Fan 2 - NVIDIA GeForce RTX 3070 Ti",
+        "NickName": "Control 2 - NVIDIA GeForce RTX 3070 Ti"
+      }
+    ],
+    "HideCalibration": false,
+    "HideFanSpeedCards": false,
+    "HorizontalUIOrientation": true,
+    "PrimaryColor": "#FF607B8B",
+    "SecondaryColor": "#FF37FF00",
+    "SelectedTheme": "",
+    "ShowHiddenCards": false,
+    "SyncThemeWithWindows": true,
+    "SyncTrayIconColorWithWindows": true,
+    "TemperatureSensors": [],
+    "TrayIconColor": null,
+    "TrayIcons": [
+      {
+        "Color": "#FF63AEF8",
+        "SensorId": {
+          "Identifier": "/intelcpu/0/temperature/16",
+          "IsHidden": false,
+          "Name": "CPU Package",
+          "NickName": "CPU Package"
+        }
+      },
+      {
+        "Color": "#FF8CE888",
+        "SensorId": {
+          "Identifier": "NVApiWrapper/0-GA104-A/sensor/0",
+          "IsHidden": false,
+          "Name": "GPU",
+          "NickName": "GPU"
+        }
+      }
+    ]
+  },
+  "Sensors": {
+    "AdlxWrapperSettings": {
+      "Enabled": false
+    },
+    "DisabledPlugins": [],
+    "DisableStorageSensors": true,
+    "LibreHardwareMonitorSettings": {
+      "Controller": false,
+      "CPU": true,
+      "EmbeddedEC": true,
+      "GPU": true,
+      "InpOut": false,
+      "Memory": false,
+      "Motherboard": true,
+      "PSU": false,
+      "Storage": false,
+      "ZeroRPMOverride": false
+    },
+    "NvAPIWrapperSettings": {
+      "Enabled": true,
+      "ZeroRPMOverride": false
+    },
+    "SensorCount": 62
+  }
+}
