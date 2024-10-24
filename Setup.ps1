@@ -1,7 +1,26 @@
 #Requires -RunAsAdministrator
 
 Write-Host "Installing Packages"
-winget import -i ./windows.apps.json --accept-package-agreements --accept-source-agreements
+
+$apps = (Get-Content "$PSScriptRoot\windows.apps.json" | ConvertFrom-Json)
+
+foreach($source in $apps.Sources) {
+    $details = $source.SourceDetails
+    $sourceName = $details.Name
+    Write-Host "Installing from $sourceName"
+    foreach($package in $source.Packages) {
+        $id = $package.PackageIdentifier
+        $scope = $package.Scope
+
+        if ($scope) {
+            Write-Host "Installing $id/$scope"
+            winget install --id $id --silent --accept-package-agreements --source $sourceName --scope $scope
+        } else {
+            Write-Host "Installing $id"
+            winget install --id $id --silent --accept-package-agreements --source $sourceName
+        }
+    }
+}
 
 Write-Host "Setting Up AutoHotKey Task"
 # get path from script directory
