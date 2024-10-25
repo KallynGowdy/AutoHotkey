@@ -64,9 +64,27 @@
         "SelectedCommandStepUp": 8.0,
         "SelectedFanCurve": {
           "CommandMode": 0,
+          "IgnoreHysteresisAtLimits": true,
           "IsHidden": false,
-          "Name": "Flat",
-          "Percent": 45.0
+          "MaximumCommand": 100,
+          "MaximumTemperature": 120.0,
+          "MinimumTemperature": 20.0,
+          "Name": "CPU",
+          "OneWayHysteresis": false,
+          "Points": [
+            "30.044257509651903,10",
+            "70,40",
+            "80.1,45",
+            "90,100"
+          ],
+          "SelectedHysteresis": 2.0,
+          "SelectedResponseTime": 1,
+          "SelectedTempSource": {
+            "Identifier": "/intelcpu/0/temperature/16",
+            "IsHidden": false,
+            "Name": "CPU Package",
+            "NickName": "CPU Package"
+          }
         },
         "SelectedOffset": 0,
         "SelectedStart": 18,
