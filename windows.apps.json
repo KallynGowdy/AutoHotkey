@@ -63,6 +63,9 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
+				},
+				{
+					"PackageIdentifier": "Amazon.AWSCLI"
 				}
 			],
 			"SourceDetails" : 
