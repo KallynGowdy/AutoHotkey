@@ -1,5 +1,5 @@
 {
-  "__VERSION__": "206",
+  "__VERSION__": "209",
   "Main": {
     "Controls": [
       {
@@ -80,7 +80,7 @@
           "SelectedHysteresis": 2.0,
           "SelectedResponseTime": 1,
           "SelectedTempSource": {
-            "Identifier": "/intelcpu/0/temperature/16",
+            "Identifier": "/intelcpu/0/temperature/18",
             "IsHidden": false,
             "Name": "CPU Package",
             "NickName": "CPU Package"
@@ -166,7 +166,7 @@
             "SelectedMixFunction": 1,
             "SelectedSensors": [
               {
-                "Identifier": "/intelcpu/0/temperature/33",
+                "Identifier": "/intelcpu/0/temperature/0",
                 "IsHidden": false,
                 "Name": "Core Max",
                 "NickName": "Core Max"
@@ -248,7 +248,7 @@
             "SelectedMixFunction": 1,
             "SelectedSensors": [
               {
-                "Identifier": "/intelcpu/0/temperature/33",
+                "Identifier": "/intelcpu/0/temperature/0",
                 "IsHidden": false,
                 "Name": "Core Max",
                 "NickName": "Core Max"
@@ -346,7 +346,7 @@
             "SelectedMixFunction": 1,
             "SelectedSensors": [
               {
-                "Identifier": "/intelcpu/0/temperature/33",
+                "Identifier": "/intelcpu/0/temperature/0",
                 "IsHidden": false,
                 "Name": "Core Max",
                 "NickName": "Core Max"
@@ -453,7 +453,7 @@
             "SelectedMixFunction": 1,
             "SelectedSensors": [
               {
-                "Identifier": "/intelcpu/0/temperature/33",
+                "Identifier": "/intelcpu/0/temperature/0",
                 "IsHidden": false,
                 "Name": "Core Max",
                 "NickName": "Core Max"
@@ -682,7 +682,7 @@
         "SelectedMixFunction": 1,
         "SelectedSensors": [
           {
-            "Identifier": "/intelcpu/0/temperature/33",
+            "Identifier": "/intelcpu/0/temperature/0",
             "IsHidden": false,
             "Name": "Core Max",
             "NickName": "Core Max"
@@ -734,7 +734,7 @@
         "SelectedHysteresis": 2.0,
         "SelectedResponseTime": 1,
         "SelectedTempSource": {
-          "Identifier": "/intelcpu/0/temperature/16",
+          "Identifier": "/intelcpu/0/temperature/18",
           "IsHidden": false,
           "Name": "CPU Package",
           "NickName": "CPU Package"
@@ -764,7 +764,7 @@
           "SelectedMixFunction": 1,
           "SelectedSensors": [
             {
-              "Identifier": "/intelcpu/0/temperature/33",
+              "Identifier": "/intelcpu/0/temperature/0",
               "IsHidden": false,
               "Name": "Core Max",
               "NickName": "Core Max"
@@ -803,7 +803,7 @@
           "SelectedMixFunction": 1,
           "SelectedSensors": [
             {
-              "Identifier": "/intelcpu/0/temperature/33",
+              "Identifier": "/intelcpu/0/temperature/0",
               "IsHidden": false,
               "Name": "Core Max",
               "NickName": "Core Max"
@@ -915,7 +915,7 @@
       {
         "Color": "#FF63AEF8",
         "SensorId": {
-          "Identifier": "/intelcpu/0/temperature/16",
+          "Identifier": "/intelcpu/0/temperature/18",
           "IsHidden": false,
           "Name": "CPU Package",
           "NickName": "CPU Package"
