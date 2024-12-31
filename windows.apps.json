@@ -66,6 +66,9 @@
 				},
 				{
 					"PackageIdentifier": "Amazon.AWSCLI"
+				},
+				{
+					"PackageIdentifier": "VideoLAN.VLC"
 				}
 			],
 			"SourceDetails" : 
